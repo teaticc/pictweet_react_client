@@ -1,7 +1,6 @@
 {
   "name": "pictweet_react_front",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +10,8 @@
   "devDependencies": {
     "babel-plugin-transform-object-assign": "^6.3.13",
     "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-polyfill": "^6.13.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babelify": "^7.2.0",
@@ -26,5 +27,14 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we-b/pictweet_react_client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/we-b/pictweet_react_client/issues"
+  },
+  "homepage": "https://github.com/we-b/pictweet_react_client#readme",
+  "description": ""
 }

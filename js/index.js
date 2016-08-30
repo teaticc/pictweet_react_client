@@ -1,8 +1,17 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from './components/App'
+import { createStore, applyMiddleware } from "redux"
+import { Provider } from "react-redux"
+import AppContainer from './containers/App'
+import tweetApp from "./reducers"
+import thunk from "redux-thunk"
+
+let store = createStore(tweetApp, applyMiddleware(thunk))
+let rootElement = document.getElementById('root')
 
 render(
-  <App/>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <AppContainer />
+  </Provider>,
+  rootElement
 )
